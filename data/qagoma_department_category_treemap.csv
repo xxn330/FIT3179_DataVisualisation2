@@ -1,0 +1,159 @@
+id,parent,name,department,count
+root,,All artworks,,0
+dept:Asian Art,root,Asian Art,Asian Art,0
+dept:Australian Art,root,Australian Art,Australian Art,0
+dept:Contemporary Asian Art,root,Contemporary Asian Art,Contemporary Asian Art,0
+dept:Contemporary Australian Art,root,Contemporary Australian Art,Contemporary Australian Art,0
+dept:Contemporary International Art,root,Contemporary International Art,Contemporary International Art,0
+dept:Indigenous Australian Art,root,Indigenous Australian Art,Indigenous Australian Art,0
+dept:International Art,root,International Art,International Art,0
+dept:Pacific Art,root,Pacific Art,Pacific Art,0
+leaf:Asian Art:Artefact,dept:Asian Art,Artefact,Asian Art,31
+leaf:Asian Art:Book,dept:Asian Art,Book,Asian Art,5
+leaf:Asian Art:Ceramic,dept:Asian Art,Ceramic,Asian Art,197
+leaf:Asian Art:Drawing,dept:Asian Art,Drawing,Asian Art,22
+leaf:Asian Art:Electronic media,dept:Asian Art,Electronic media,Asian Art,1
+leaf:Asian Art:Furniture,dept:Asian Art,Furniture,Asian Art,10
+leaf:Asian Art:Glass,dept:Asian Art,Glass,Asian Art,2
+leaf:Asian Art:Jewellery,dept:Asian Art,Jewellery,Asian Art,5
+leaf:Asian Art:Metalwork,dept:Asian Art,Metalwork,Asian Art,25
+leaf:Asian Art:Miscellaneous,dept:Asian Art,Miscellaneous,Asian Art,1
+leaf:Asian Art:Painting,dept:Asian Art,Painting,Asian Art,98
+leaf:Asian Art:Photograph,dept:Asian Art,Photograph,Asian Art,104
+leaf:Asian Art:Print,dept:Asian Art,Print,Asian Art,479
+leaf:Asian Art:Sculpture,dept:Asian Art,Sculpture,Asian Art,130
+leaf:Asian Art:Stonework,dept:Asian Art,Stonework,Asian Art,14
+leaf:Asian Art:Textile,dept:Asian Art,Textile,Asian Art,82
+leaf:Asian Art:Woodwork,dept:Asian Art,Woodwork,Asian Art,21
+leaf:Australian Art:Artefact,dept:Australian Art,Artefact,Australian Art,2
+leaf:Australian Art:Book,dept:Australian Art,Book,Australian Art,22
+leaf:Australian Art:Ceramic,dept:Australian Art,Ceramic,Australian Art,381
+leaf:Australian Art:Drawing,dept:Australian Art,Drawing,Australian Art,1166
+leaf:Australian Art:Electronic media,dept:Australian Art,Electronic media,Australian Art,35
+leaf:Australian Art:Film,dept:Australian Art,Film,Australian Art,1
+leaf:Australian Art:Furniture,dept:Australian Art,Furniture,Australian Art,46
+leaf:Australian Art:Glass,dept:Australian Art,Glass,Australian Art,1
+leaf:Australian Art:Installation,dept:Australian Art,Installation,Australian Art,5
+leaf:Australian Art:Jewellery,dept:Australian Art,Jewellery,Australian Art,57
+leaf:Australian Art:Leatherwork,dept:Australian Art,Leatherwork,Australian Art,14
+leaf:Australian Art:Metalwork,dept:Australian Art,Metalwork,Australian Art,43
+leaf:Australian Art:Miscellaneous,dept:Australian Art,Miscellaneous,Australian Art,6
+leaf:Australian Art:Multiple,dept:Australian Art,Multiple,Australian Art,1
+leaf:Australian Art:Painting,dept:Australian Art,Painting,Australian Art,1742
+leaf:Australian Art:Photograph,dept:Australian Art,Photograph,Australian Art,655
+leaf:Australian Art:Print,dept:Australian Art,Print,Australian Art,1136
+leaf:Australian Art:Sculpture,dept:Australian Art,Sculpture,Australian Art,169
+leaf:Australian Art:Textile,dept:Australian Art,Textile,Australian Art,66
+leaf:Australian Art:Woodwork,dept:Australian Art,Woodwork,Australian Art,36
+leaf:Contemporary Asian Art:Assemblage,dept:Contemporary Asian Art,Assemblage,Contemporary Asian Art,17
+leaf:Contemporary Asian Art:Book,dept:Contemporary Asian Art,Book,Contemporary Asian Art,4
+leaf:Contemporary Asian Art:Ceramic,dept:Contemporary Asian Art,Ceramic,Contemporary Asian Art,41
+leaf:Contemporary Asian Art:Drawing,dept:Contemporary Asian Art,Drawing,Contemporary Asian Art,124
+leaf:Contemporary Asian Art:Electronic media,dept:Contemporary Asian Art,Electronic media,Contemporary Asian Art,56
+leaf:Contemporary Asian Art:Fibre,dept:Contemporary Asian Art,Fibre,Contemporary Asian Art,8
+leaf:Contemporary Asian Art:Film,dept:Contemporary Asian Art,Film,Contemporary Asian Art,13
+leaf:Contemporary Asian Art:Furniture,dept:Contemporary Asian Art,Furniture,Contemporary Asian Art,3
+leaf:Contemporary Asian Art:Glass,dept:Contemporary Asian Art,Glass,Contemporary Asian Art,1
+leaf:Contemporary Asian Art:Installation,dept:Contemporary Asian Art,Installation,Contemporary Asian Art,71
+leaf:Contemporary Asian Art:Miscellaneous,dept:Contemporary Asian Art,Miscellaneous,Contemporary Asian Art,5
+leaf:Contemporary Asian Art:Multiple,dept:Contemporary Asian Art,Multiple,Contemporary Asian Art,44
+leaf:Contemporary Asian Art:Painting,dept:Contemporary Asian Art,Painting,Contemporary Asian Art,478
+leaf:Contemporary Asian Art:Photograph,dept:Contemporary Asian Art,Photograph,Contemporary Asian Art,258
+leaf:Contemporary Asian Art:Print,dept:Contemporary Asian Art,Print,Contemporary Asian Art,143
+leaf:Contemporary Asian Art:Sculpture,dept:Contemporary Asian Art,Sculpture,Contemporary Asian Art,148
+leaf:Contemporary Asian Art:Textile,dept:Contemporary Asian Art,Textile,Contemporary Asian Art,66
+leaf:Contemporary Asian Art:Woodwork,dept:Contemporary Asian Art,Woodwork,Contemporary Asian Art,1
+leaf:Contemporary Australian Art:Assemblage,dept:Contemporary Australian Art,Assemblage,Contemporary Australian Art,30
+leaf:Contemporary Australian Art:Book,dept:Contemporary Australian Art,Book,Contemporary Australian Art,45
+leaf:Contemporary Australian Art:Ceramic,dept:Contemporary Australian Art,Ceramic,Contemporary Australian Art,362
+leaf:Contemporary Australian Art:Drawing,dept:Contemporary Australian Art,Drawing,Contemporary Australian Art,306
+leaf:Contemporary Australian Art:Electronic media,dept:Contemporary Australian Art,Electronic media,Contemporary Australian Art,137
+leaf:Contemporary Australian Art:Fibre,dept:Contemporary Australian Art,Fibre,Contemporary Australian Art,14
+leaf:Contemporary Australian Art:Film,dept:Contemporary Australian Art,Film,Contemporary Australian Art,3
+leaf:Contemporary Australian Art:Furniture,dept:Contemporary Australian Art,Furniture,Contemporary Australian Art,13
+leaf:Contemporary Australian Art:Glass,dept:Contemporary Australian Art,Glass,Contemporary Australian Art,114
+leaf:Contemporary Australian Art:Installation,dept:Contemporary Australian Art,Installation,Contemporary Australian Art,73
+leaf:Contemporary Australian Art:Jewellery,dept:Contemporary Australian Art,Jewellery,Contemporary Australian Art,108
+leaf:Contemporary Australian Art:Leatherwork,dept:Contemporary Australian Art,Leatherwork,Contemporary Australian Art,1
+leaf:Contemporary Australian Art:Metalwork,dept:Contemporary Australian Art,Metalwork,Contemporary Australian Art,43
+leaf:Contemporary Australian Art:Miscellaneous,dept:Contemporary Australian Art,Miscellaneous,Contemporary Australian Art,35
+leaf:Contemporary Australian Art:Multiple,dept:Contemporary Australian Art,Multiple,Contemporary Australian Art,34
+leaf:Contemporary Australian Art:Painting,dept:Contemporary Australian Art,Painting,Contemporary Australian Art,684
+leaf:Contemporary Australian Art:Photograph,dept:Contemporary Australian Art,Photograph,Contemporary Australian Art,975
+leaf:Contemporary Australian Art:Print,dept:Contemporary Australian Art,Print,Contemporary Australian Art,1367
+leaf:Contemporary Australian Art:Sculpture,dept:Contemporary Australian Art,Sculpture,Contemporary Australian Art,197
+leaf:Contemporary Australian Art:Textile,dept:Contemporary Australian Art,Textile,Contemporary Australian Art,76
+leaf:Contemporary Australian Art:Woodwork,dept:Contemporary Australian Art,Woodwork,Contemporary Australian Art,16
+leaf:Contemporary International Art:Assemblage,dept:Contemporary International Art,Assemblage,Contemporary International Art,24
+leaf:Contemporary International Art:Book,dept:Contemporary International Art,Book,Contemporary International Art,10
+leaf:Contemporary International Art:Ceramic,dept:Contemporary International Art,Ceramic,Contemporary International Art,2
+leaf:Contemporary International Art:Drawing,dept:Contemporary International Art,Drawing,Contemporary International Art,78
+leaf:Contemporary International Art:Electronic media,dept:Contemporary International Art,Electronic media,Contemporary International Art,77
+leaf:Contemporary International Art:Film,dept:Contemporary International Art,Film,Contemporary International Art,4
+leaf:Contemporary International Art:Glass,dept:Contemporary International Art,Glass,Contemporary International Art,10
+leaf:Contemporary International Art:Installation,dept:Contemporary International Art,Installation,Contemporary International Art,33
+leaf:Contemporary International Art:Metalwork,dept:Contemporary International Art,Metalwork,Contemporary International Art,1
+leaf:Contemporary International Art:Miscellaneous,dept:Contemporary International Art,Miscellaneous,Contemporary International Art,9
+leaf:Contemporary International Art:Multiple,dept:Contemporary International Art,Multiple,Contemporary International Art,32
+leaf:Contemporary International Art:Painting,dept:Contemporary International Art,Painting,Contemporary International Art,34
+leaf:Contemporary International Art:Photograph,dept:Contemporary International Art,Photograph,Contemporary International Art,100
+leaf:Contemporary International Art:Print,dept:Contemporary International Art,Print,Contemporary International Art,373
+leaf:Contemporary International Art:Sculpture,dept:Contemporary International Art,Sculpture,Contemporary International Art,47
+leaf:Contemporary International Art:Textile,dept:Contemporary International Art,Textile,Contemporary International Art,12
+leaf:Indigenous Australian Art:Artefact,dept:Indigenous Australian Art,Artefact,Indigenous Australian Art,151
+leaf:Indigenous Australian Art:Assemblage,dept:Indigenous Australian Art,Assemblage,Indigenous Australian Art,3
+leaf:Indigenous Australian Art:Book,dept:Indigenous Australian Art,Book,Indigenous Australian Art,2
+leaf:Indigenous Australian Art:Ceramic,dept:Indigenous Australian Art,Ceramic,Indigenous Australian Art,148
+leaf:Indigenous Australian Art:Drawing,dept:Indigenous Australian Art,Drawing,Indigenous Australian Art,120
+leaf:Indigenous Australian Art:Electronic media,dept:Indigenous Australian Art,Electronic media,Indigenous Australian Art,29
+leaf:Indigenous Australian Art:Fibre,dept:Indigenous Australian Art,Fibre,Indigenous Australian Art,310
+leaf:Indigenous Australian Art:Glass,dept:Indigenous Australian Art,Glass,Indigenous Australian Art,13
+leaf:Indigenous Australian Art:Installation,dept:Indigenous Australian Art,Installation,Indigenous Australian Art,22
+leaf:Indigenous Australian Art:Jewellery,dept:Indigenous Australian Art,Jewellery,Indigenous Australian Art,50
+leaf:Indigenous Australian Art:Metalwork,dept:Indigenous Australian Art,Metalwork,Indigenous Australian Art,1
+leaf:Indigenous Australian Art:Miscellaneous,dept:Indigenous Australian Art,Miscellaneous,Indigenous Australian Art,5
+leaf:Indigenous Australian Art:Painting,dept:Indigenous Australian Art,Painting,Indigenous Australian Art,1066
+leaf:Indigenous Australian Art:Photograph,dept:Indigenous Australian Art,Photograph,Indigenous Australian Art,119
+leaf:Indigenous Australian Art:Print,dept:Indigenous Australian Art,Print,Indigenous Australian Art,384
+leaf:Indigenous Australian Art:Sculpture,dept:Indigenous Australian Art,Sculpture,Indigenous Australian Art,347
+leaf:Indigenous Australian Art:Textile,dept:Indigenous Australian Art,Textile,Indigenous Australian Art,40
+leaf:Indigenous Australian Art:Woodwork,dept:Indigenous Australian Art,Woodwork,Indigenous Australian Art,17
+leaf:International Art:Artefact,dept:International Art,Artefact,International Art,12
+leaf:International Art:Assemblage,dept:International Art,Assemblage,International Art,7
+leaf:International Art:Book,dept:International Art,Book,International Art,23
+leaf:International Art:Ceramic,dept:International Art,Ceramic,International Art,286
+leaf:International Art:Drawing,dept:International Art,Drawing,International Art,117
+leaf:International Art:Electronic media,dept:International Art,Electronic media,International Art,19
+leaf:International Art:Furniture,dept:International Art,Furniture,International Art,26
+leaf:International Art:Glass,dept:International Art,Glass,International Art,153
+leaf:International Art:Installation,dept:International Art,Installation,International Art,1
+leaf:International Art:Jewellery,dept:International Art,Jewellery,International Art,17
+leaf:International Art:Metalwork,dept:International Art,Metalwork,International Art,110
+leaf:International Art:Miscellaneous,dept:International Art,Miscellaneous,International Art,1
+leaf:International Art:Multiple,dept:International Art,Multiple,International Art,1
+leaf:International Art:Painting,dept:International Art,Painting,International Art,323
+leaf:International Art:Photograph,dept:International Art,Photograph,International Art,165
+leaf:International Art:Print,dept:International Art,Print,International Art,1041
+leaf:International Art:Sculpture,dept:International Art,Sculpture,International Art,89
+leaf:International Art:Stonework,dept:International Art,Stonework,International Art,4
+leaf:International Art:Textile,dept:International Art,Textile,International Art,86
+leaf:International Art:Woodwork,dept:International Art,Woodwork,International Art,15
+leaf:Pacific Art:Artefact,dept:Pacific Art,Artefact,Pacific Art,7
+leaf:Pacific Art:Assemblage,dept:Pacific Art,Assemblage,Pacific Art,5
+leaf:Pacific Art:Book,dept:Pacific Art,Book,Pacific Art,2
+leaf:Pacific Art:Ceramic,dept:Pacific Art,Ceramic,Pacific Art,72
+leaf:Pacific Art:Drawing,dept:Pacific Art,Drawing,Pacific Art,116
+leaf:Pacific Art:Electronic media,dept:Pacific Art,Electronic media,Pacific Art,50
+leaf:Pacific Art:Fibre,dept:Pacific Art,Fibre,Pacific Art,394
+leaf:Pacific Art:Film,dept:Pacific Art,Film,Pacific Art,2
+leaf:Pacific Art:Glass,dept:Pacific Art,Glass,Pacific Art,7
+leaf:Pacific Art:Installation,dept:Pacific Art,Installation,Pacific Art,36
+leaf:Pacific Art:Jewellery,dept:Pacific Art,Jewellery,Pacific Art,29
+leaf:Pacific Art:Miscellaneous,dept:Pacific Art,Miscellaneous,Pacific Art,19
+leaf:Pacific Art:Multiple,dept:Pacific Art,Multiple,Pacific Art,18
+leaf:Pacific Art:Painting,dept:Pacific Art,Painting,Pacific Art,161
+leaf:Pacific Art:Photograph,dept:Pacific Art,Photograph,Pacific Art,293
+leaf:Pacific Art:Print,dept:Pacific Art,Print,Pacific Art,160
+leaf:Pacific Art:Sculpture,dept:Pacific Art,Sculpture,Pacific Art,152
+leaf:Pacific Art:Textile,dept:Pacific Art,Textile,Pacific Art,53
+leaf:Pacific Art:Woodwork,dept:Pacific Art,Woodwork,Pacific Art,4
