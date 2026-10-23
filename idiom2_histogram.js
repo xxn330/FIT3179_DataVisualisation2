@@ -24,7 +24,6 @@ const histogram = {
       "as": "decade_end"
     }
   ],
-
  
     "mark": {
     "type": "bar",
