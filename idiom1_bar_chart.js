@@ -73,6 +73,7 @@ const barChart = {
     "color": {
       "field": "category",
       "type": "nominal",
+
       "scale": {
         "domain": [
           "Print",
@@ -88,24 +89,25 @@ const barChart = {
           "Jewellery",
           "Installation"
         ],
+
         "range": [
-          "#9E3D2D",
-          "#156D8D",
-          "#926700",
-          "#367A47",
-          "#7948AA",
-          "#D45D28",
-          "#3555B0",
-          "#82542B",
-          "#B43576",
-          "#138B87",
-          "#70536D",
-          "#61751B"
+          "#9B4F52",
+          "#326D88",
+          "#B18A4F",
+          "#4E8065",
+          "#80679B",
+          "#B66A48",
+          "#6086A3",
+          "#87745A",
+          "#A46C87",
+          "#4A938C",
+          "#796F87",
+          "#718451"
         ]
       },
+
       "legend": null
     },
-
 
     "tooltip": [
       {

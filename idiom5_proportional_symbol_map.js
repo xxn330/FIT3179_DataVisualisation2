@@ -1,18 +1,19 @@
+
 const symbolMap = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "width": 560,
-  "height": 370,
+  "width": 660,
+  "height": 420,
   "background": "#ffffff",
 
   "projection": {
     "type": "mercator",
     "center": [134, -27],
-    "scale": 530
+    "scale": 590
   },
 
   "layer": [
-    // Australia map
+    // Layer 1: Australia map
     {
       "data": {
         "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
@@ -22,7 +23,9 @@ const symbolMap = {
         }
       },
       "transform": [
-        {"filter": "datum.id == 36 || datum.id == '036'"}
+        {
+          "filter": "datum.id == 36 || datum.id == '036'"
+        }
       ],
       "mark": {
         "type": "geoshape",
@@ -31,11 +34,12 @@ const symbolMap = {
       }
     },
 
-    // Circles representing artwork counts
+    // Layer 2: Proportional circles
     {
       "data": {
         "url": "data/australian_city_public_art_combined.csv"
       },
+
       "transform": [
         {
           "aggregate": [
@@ -52,12 +56,15 @@ const symbolMap = {
           "as": "latitude"
         }
       ],
+
       "mark": {
         "type": "circle",
-        "color": "#a14c32",
-        "opacity": 0.75,
-        "stroke": "white"
+        "color": "#176B50",
+        "opacity": 0.85,
+        "stroke": "#ffffff",
+        "strokeWidth": 1.5
       },
+
       "encoding": {
         "longitude": {
           "field": "longitude",
@@ -67,18 +74,27 @@ const symbolMap = {
           "field": "latitude",
           "type": "quantitative"
         },
+
         "size": {
-          "field": "artwork_count",
-          "type": "quantitative",
+        "field": "artwork_count",
+        "type": "quantitative",
+        "scale": {
+          "domain": [0, 300],
+          "range": [0, 2500]
+        },
+          
+        "legend": {
+          "orient": "right",
+          "direction": "vertical",
           "title": "Artwork Count",
-          "scale": {
-            "domain": [0, 300],
-            "range": [0, 2500]
-          },
-          "legend": {
-            "orient": "bottom",
-            "values": [100, 200, 300]
-          }
+          "values": [100, 200, 300],
+          "labelFontSize": 12,
+          "titleFontSize": 13,
+          "symbolFillColor": "#176B50",
+          "symbolStrokeColor": "#FFFFFF",
+          "offset": 15
+        }
+
         },
         "tooltip": [
           {"field": "city", "title": "City"},
@@ -91,32 +107,74 @@ const symbolMap = {
       }
     },
 
-    // City labels
+    // Layer 3: Brisbane label
     {
       "data": {
         "values": [
-          {"city": "Brisbane", "longitude": 153.024, "latitude": -27.469},
-          {"city": "Canberra", "longitude": 149.130, "latitude": -35.281},
-          {"city": "Melbourne", "longitude": 144.963, "latitude": -37.816}
+          {"longitude": 148.5, "latitude": -26.0}
         ]
       },
       "mark": {
         "type": "text",
-        "fontSize": 12,
+        "text": "Brisbane: 198",
+        "align": "right",
+        "fontSize": 13,
         "fontWeight": "bold",
-        "dx": 20,
-        "dy": -12
+        "color": "#252521"
       },
       "encoding": {
         "longitude": {"field": "longitude"},
-        "latitude": {"field": "latitude"},
-        "text": {"field": "city"}
+        "latitude": {"field": "latitude"}
+      }
+    },
+
+    // Layer 4: Canberra label
+    {
+      "data": {
+        "values": [
+          {"longitude": 153.5, "latitude": -34.0}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "text": "Canberra: 132",
+        "align": "left",
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#252521"
+      },
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"}
+      }
+    },
+
+    // Layer 5: Melbourne label
+    {
+      "data": {
+        "values": [
+          {"longitude": 143.5, "latitude": -40.3}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "text": "Melbourne: 261",
+        "align": "right",
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#252521"
+      },
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"}
       }
     }
   ],
 
   "config": {
-    "view": {"stroke": null},
+    "view": {
+      "stroke": null
+    },
     "legend": {
       "labelFont": "DM Sans",
       "titleFont": "DM Sans"
@@ -124,5 +182,8 @@ const symbolMap = {
   }
 };
 
-vegaEmbed("#symbol-map", symbolMap, {actions: false});
+vegaEmbed("#symbol-map", symbolMap, {
+  actions: false
+});
+
 

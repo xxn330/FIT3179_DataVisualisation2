@@ -4,7 +4,7 @@ const acquisitionChart = {
 
   "width": 700,
   "height": 440,
-  "background": "#ffffff",
+  "background": "#f7f3ed",
   "padding": 10,
 
   "data": {

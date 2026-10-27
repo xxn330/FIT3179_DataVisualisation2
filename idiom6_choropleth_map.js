@@ -1,141 +1,164 @@
-
 const choroplethMap = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "width": 760,
-  "height": 440,
-  "background": "#ffffff",
+  $schema:
+    "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "projection": {
-    "type": "equalEarth"
+  width: 800,
+  height: 440,
+  background: "#F7F3ED",
+
+  projection: {
+    type: "equalEarth"
   },
 
-  "layer": [
+  layer: [
+
+    /* Base world map */
     {
-      // Background: show all countries in light grey
-      "data": {
-        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
-        "format": {
-          "type": "topojson",
-          "feature": "countries"
+      data: {
+        url:
+          "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        format: {
+          type: "topojson",
+          feature: "countries"
         }
       },
 
-      "mark": {
-        "type": "geoshape",
-        "fill": "#eeebe7",
-        "stroke": "#ffffff",
-        "strokeWidth": 0.5
+      mark: {
+        type: "geoshape",
+        fill: "#b4b2af",
+        stroke: "#FFFFFF",
+        strokeWidth: 0.45
       }
     },
 
+    /* Countries with artist records */
     {
-      // Countries with QAGOMA artist records
-      "data": {
-        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
-        "format": {
-          "type": "topojson",
-          "feature": "countries"
+      data: {
+        url:
+          "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        format: {
+          type: "topojson",
+          feature: "countries"
         }
       },
 
-      "transform": [
+      transform: [
         {
-          "calculate": "toNumber(datum.id)",
-          "as": "country_id"
+          calculate: "toNumber(datum.id)",
+          as: "country_id"
         },
 
         {
-          "lookup": "country_id",
-          "from": {
-            "data": {
-              "url": "data/qagoma_artist_country_choropleth.csv",
-              "format": {
-                "type": "csv",
-                "parse": {
-                  "country_id": "number",
-                  "artist_count": "number"
+          lookup: "country_id",
+          from: {
+            data: {
+              url:
+                "data/qagoma_artist_country_choropleth.csv",
+
+              format: {
+                type: "csv",
+                parse: {
+                  country_id: "number",
+                  artist_count: "number"
                 }
               }
             },
-            "key": "country_id",
-            "fields": [
-              "country",
-              "artist_count"
-            ]
+
+            key: "country_id",
+            fields: ["country", "artist_count"]
           }
         },
 
         {
-          "filter": "isValid(datum.artist_count)"
+          filter:
+            "isValid(datum.artist_count) && datum.artist_count > 0"
         }
       ],
 
-      "mark": {
-        "type": "geoshape",
-        "stroke": "#ffffff",
-        "strokeWidth": 0.5
+      mark: {
+        type: "geoshape",
+        stroke: "#FFFFFF",
+        strokeWidth: 0.55
       },
 
-      "encoding": {
-        "color": {
-          "field": "artist_count",
-          "type": "quantitative",
-          "title": "Artist Records",
-          "scale": {
-            "type": "sqrt",
-            
-            "range": [
-            "#EDF4FC",
-            "#B9D5EC",
-            "#70A9D4",
-            "#2D73A7",
-            "#103A69"
-            ]
+      encoding: {
 
+        color: {
+          field: "artist_count",
+          type: "quantitative",
+          title: "Artist Records (log scale)",
+
+          scale: {
+            type: "log",
+            domain: [1, 2789],
+
+            range: [
+              "#90B5C9",
+              "#568EAE",
+              "#28698E",
+              "#164C70",
+              "#092F4D"
+            ]
           },
-          "legend": {
-            "orient": "bottom",
-            "direction": "horizontal",
-            "gradientLength": 300,
-            "titlePadding": 12,
-            "format": ",d"
+
+          legend: {
+            orient: "bottom",
+            direction: "horizontal",
+            gradientLength: 320,
+            values: [1, 10, 100, 1000],
+            format: ",d",
+            titlePadding: 12
           }
         },
 
-        "tooltip": [
+        tooltip: [
           {
-            "field": "country",
-            "type": "nominal",
-            "title": "Country"
+            field: "country",
+            type: "nominal",
+            title: "Country"
           },
           {
-            "field": "artist_count",
-            "type": "quantitative",
-            "title": "Artist Records",
-            "format": ",d"
+            field: "artist_count",
+            type: "quantitative",
+            title: "Artist Records",
+            format: ",d"
           }
         ]
+
       }
     }
+
   ],
 
-  "config": {
-    "view": {
-      "stroke": null
+  config: {
+
+    view: {
+      stroke: null
     },
 
-    "legend": {
-      "labelFont": "DM Sans",
-      "titleFont": "DM Sans",
-      "labelFontSize": 12,
-      "titleFontSize": 13,
-      "labelColor": "#494943",
-      "titleColor": "#252521"
+    legend: {
+      labelFont: "DM Sans",
+      titleFont: "DM Sans",
+      labelFontSize: 12,
+      titleFontSize: 13,
+      labelColor: "#494943",
+      titleColor: "#252521",
+      layout: {
+        bottom: {
+          anchor: "middle",
+          direction: "vertical",
+          center: true
+        }
+      }
     }
+
   }
+
 };
 
-vegaEmbed("#choropleth-map", choroplethMap, {
-  actions: false
-});
+vegaEmbed(
+  "#choropleth-map",
+  choroplethMap,
+  { actions: false }
+).catch(console.error);

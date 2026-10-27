@@ -4,7 +4,7 @@ const boxPlot = {
 
   "width": 700,
   "height": 400,
-  "background": "#ffffff",
+  "background": "#f7f3ed",
   "padding": 10,
 
   "data": {
@@ -58,15 +58,17 @@ const boxPlot = {
       }
     },
 
-    "y": {
-      "field": "department",
-      "type": "nominal",
-      "title": null,
-      "sort": {
-        "op": "median",
-        "field": "acquisition_lag_years",
-        "order": "ascending"
-      },
+    
+      "y": {
+        "field": "department",
+        "type": "nominal",
+        "title": null,
+        "sort": {
+          "op": "median",
+          "field": "acquisition_lag_years",
+          "order": "ascending"
+        },
+
       "axis": {
         "labelPadding": 12,
         "labelLimit": 240,

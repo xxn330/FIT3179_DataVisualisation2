@@ -4,19 +4,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description"
-    content="Exploring Australian public art collections through interactive data visualisations.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts -->
+  <title>Art Without Borders | FIT3179 DV2</title>
+
+  <meta name="description"
+    content="Exploring Australian art through interactive maps and visualisations.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Vega Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -24,454 +27,945 @@
 
 <body>
 
-  <!-- HEADER -->
+        <!-- SIMPLE STICKY NAVIGATION -->
+
+        <nav class="simple-nav" aria-label="Main navigation">
+
+        <div class="simple-nav-inner">
+
+            <!-- BRAND -->
+            <a href="#top" class="simple-nav-brand">
+            ART WITHOUT BORDERS
+            </a>
+
+            <!-- NAVIGATION LINKS -->
+            <div class="simple-nav-links">
+
+            <a href="#top">
+                Home
+            </a>
+
+            <a href="#exhibition-directory">
+                Explore Sections
+            </a>
+
+            <a href="#conclusion">
+                About
+            </a>
+
+            </div>
+
+        </div>
+
+        </nav>
+
+  <!-- ======================================
+       HERO
+       ====================================== -->
+
   <header class="hero" id="top">
-
     <div class="hero-content">
-      <p class="eyebrow">FIT3179 · DATA VISUALISATION 2</p>
 
-      <h1>Art Without<br><em>Borders.</em></h1>
+      <p class="eyebrow">
+        FIT3179 · DATA VISUALISATION 2
+      </p>
+
+      <h1>
+        Art Without<br>
+        <em>Borders.</em>
+      </h1>
 
       <p class="hero-description">
         Exploring Australia's visual arts heritage
-        through public art collections.
+        through gallery collections and public art.
       </p>
 
-    </div>
+      <a class="hero-link" href="#introduction">
+        Discover the story ↓
+      </a>
 
+    </div>
   </header>
+
 
   <main>
 
-    <!-- INTRODUCTION -->
-    <section class="section" id="introduction">
+<!-- INTRODUCTION -->
+<section class="section intro-section" id="introduction">
 
-      <p class="section-number">01 / INTRODUCTION</p>
+  <div class="section-inner">
 
-      <h2>More than art. A record of culture.</h2>
+    <!-- TWO-COLUMN INTRODUCTION -->
+    <div class="intro-layout">
 
-      <p class="section-text">
-        Australian public galleries preserve artworks
-        from different cultures and historical periods.
-        Outdoor art also shapes Australian cities.
-      </p>
+      <div class="intro-left">
 
-      <p class="section-text">
-        This story explores QAGOMA's collection,
-        alongside public art from Brisbane,
-        Melbourne and Canberra.
-      </p>
-
-      <div class="method-note">
-        <h3>About This Visualisation</h3>
-
-        <p><strong>Who:</strong>
-          Visitors, students and Australian art enthusiasts.
+        <p class="section-number">
+          01 / INTRODUCTION
         </p>
 
-        <p><strong>What:</strong>
-          Artwork categories, dates, origins,
-          locations and acquisition records.
-        </p>
+        <h2>
+          More than art.<br>
+          A record of culture.
+        </h2>
 
-        <p><strong>Why:</strong>
-          To understand patterns across public art collections.
-        </p>
-
-        <p><strong>How:</strong>
-          Interactive charts and geographic maps.
-          Colours, positions and sizes represent data values.
-          Hover to explore additional details.
-        </p>
       </div>
 
-    </section>
+      <div class="intro-right">
 
-    <!-- IDIOM 1 -->
+        <p class="intro-statement">
+          Art reflects the people, places
+          and periods that shape a culture.
+        </p>
+
+        <p class="intro-description">
+          Explore QAGOMA's gallery collection
+          alongside public art in Brisbane,
+          Melbourne and Canberra.
+          Discover patterns across time,
+          geography and collecting practices.
+        </p>
+
+        <p class="intro-audience">
+            For art enthusiasts, researchers and anyone
+            interested in Australia's visual arts heritage.
+        </p>
+
+      </div>
+
+    </div>
+
+<!-- COMPACT EXHIBITION INDEX -->
+
+<div class="exhibition-overview">
+
+  <span class="overview-label">
+    EXPLORE THE EXHIBITION
+  </span>
+
+  <span class="overview-count">
+    12 visualisations · 9 sections
+  </span>
+
+</div>
+
+
+<nav class="exhibition-index"
+     id="exhibition-directory"
+     aria-label="Exhibition section index">
+
+  <!-- COLUMN 1 -->
+  <div class="index-column">
+
+    <a href="#collections" class="index-item">
+      <span class="index-number">02</span>
+      <span class="index-title">Collections</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+    <a href="#time" class="index-item">
+      <span class="index-number">03</span>
+      <span class="index-title">Art Through Time</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+    <a href="#cities" class="index-item">
+      <span class="index-number">04</span>
+      <span class="index-title">Art Across Cities</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+  </div>
+
+  <!-- COLUMN 2 -->
+  <div class="index-column">
+
+    <a href="#city-comparison" class="index-item">
+      <span class="index-number">05</span>
+      <span class="index-title">City Comparison</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+    <a href="#global" class="index-item">
+      <span class="index-number">06</span>
+      <span class="index-title">Global Representation</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+    <a href="#diversity" class="index-item">
+      <span class="index-number">07</span>
+      <span class="index-title">Collection Composition</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+  </div>
+
+  <!-- COLUMN 3 -->
+  <div class="index-column">
+
+    <a href="#acquisition" class="index-item">
+      <span class="index-number">08</span>
+      <span class="index-title">Acquisition History</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+    <a href="#materials" class="index-item">
+      <span class="index-number">09</span>
+      <span class="index-title">Outdoor Art Materials</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+    <a href="#acquisition-methods" class="index-item">
+      <span class="index-number">10</span>
+      <span class="index-title">Building the Collection</span>
+      <span class="index-arrow">↗</span>
+    </a>
+
+  </div>
+
+    </nav>
+
+  </div>
+
+</section>
+
+    <!-- ======================================
+         IDIOM 1 — COLLECTION CATEGORIES
+         ====================================== -->
+
     <section class="section light-section" id="collections">
 
-      <p class="section-number">02 / COLLECTIONS</p>
+      <div class="section-inner">
 
-      <h2>What kinds of art are collected?</h2>
-
-      <p class="section-text">
-        QAGOMA contains different kinds of artworks.
-        Compare the twelve most common recorded categories.
-      </p>
-
-      <div class="chart-container">
-
-        <h3>Artwork Categories in QAGOMA</h3>
-
-        <div class="chart-view" id="category-chart"></div>
-
-        <p class="insight">
-          <strong>Key insight:</strong>
-          Prints form a prominent category in the collection.
-          The chart shows the twelve largest categories.
+        <p class="section-number">
+          02 / COLLECTIONS
         </p>
 
-        <p class="source">
-          Source: Queensland Art Gallery / Gallery of Modern Art.
-          Top twelve recorded artwork categories.
+        <h2>What kinds of art are collected?</h2>
+
+        <p class="section-text">
+          QAGOMA contains many different artwork types.
+          Which categories are most strongly represented?
         </p>
+
+        <div class="chart-container">
+
+          <h3>Artwork Categories in QAGOMA</h3>
+
+          <p class="chart-explain">
+            Compare the twelve most common artwork categories.
+            Longer bars indicate higher counts.
+          </p>
+
+          <div id="category-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Print and Painting are the largest recorded categories.
+            Both substantially exceed most other artwork types.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Collection dataset.
+            Top twelve artwork categories.
+          </p>
+
+        </div>
 
       </div>
+
     </section>
 
-    <!-- IDIOMS 2 AND 3 -->
+
+    <!-- ======================================
+         IDIOMS 2, 3 AND 12 — ART THROUGH TIME
+         ====================================== -->
+
     <section class="section" id="time">
 
-      <p class="section-number">03 / ART THROUGH TIME</p>
+      <div class="section-inner">
 
-      <h2>When were these artworks created?</h2>
-
-      <p class="section-text">
-        Creation dates reveal the historical
-        range of QAGOMA's collection.
-      </p>
-
-      <div class="chart-container">
-
-        <h3>Artworks by Creation Decade</h3>
-
-        <div class="chart-view" id="timeline-chart"></div>
-
-        <p class="insight">
-          <strong>Key insight:</strong>
-          The 2000s contain 2,770 recorded artworks,
-          the highest count among the displayed decades.
-          These are creation dates, not acquisition dates.
+        <p class="section-number">
+          03 / ART THROUGH TIME
         </p>
 
-        <p class="source">
-          Source: QAGOMA collection dataset.
-          Creation decades from 1800 to 2029.
+        <h2>When were these artworks created?</h2>
+
+        <p class="section-text">
+          Creation dates reveal the historical range
+          and changing composition of QAGOMA's collection.
         </p>
 
-      </div>
 
-      <div class="chart-container">
+        <!-- IDIOM 2 — HISTOGRAM -->
 
-        <h3>Artwork Categories Across Historical Periods</h3>
+        <div class="chart-container">
 
-        <p class="chart-explain">
-          Compare eight artwork categories
-          across six historical periods.
-          Darker colours represent higher counts.
-        </p>
+          <h3>Artworks by Creation Decade</h3>
 
-        <div class="chart-view" id="heatmap-chart"></div>
+          <p class="chart-explain">
+            Each bar represents a ten-year period.
+            Height shows the recorded artwork count.
+          </p>
 
-        <p class="source">
-          Source: QAGOMA collection dataset.
-          Eight selected categories, 1900–2019.
-        </p>
+          <div id="timeline-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            The 2000s contain 2,770 recorded artworks,
+            the highest count among displayed decades.
+            These are creation dates, not acquisition dates.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Collection dataset.
+            Creation decades, 1800–2029.
+          </p>
+
+        </div>
+
+
+        <!-- IDIOM 3 — HEATMAP -->
+
+        <div class="chart-container">
+
+          <h3>Artwork Categories Across Historical Periods</h3>
+
+          <p class="chart-explain">
+            Compare eight categories across six periods.
+            Darker cells represent higher artwork counts.
+          </p>
+
+          <div id="heatmap-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Print is prominent in the late twentieth century.
+            Painting has a high count during 2000–2019.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Collection dataset.
+            Eight categories, 1900–2019.
+          </p>
+
+        </div>
+
+
+        <!-- IDIOM 12 — STREAMGRAPH -->
+
+        <div class="chart-container">
+
+          <h3>How Artwork Categories Evolved</h3>
+
+          <p class="chart-explain">
+            Ribbon thickness represents category counts
+            across creation decades.
+            Hover to explore exact values.
+          </p>
+
+          <div id="streamgraph-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            The relative prominence of categories changes over time.
+            The streamgraph highlights simultaneous changes
+            across several artwork types.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Collection dataset.
+            Prepared category-by-decade counts, 1900–2010.
+          </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- IDIOM 4 -->
+
+    <!-- ======================================
+         IDIOM 4 — CITY DOT MAPS
+         ====================================== -->
+
     <section class="section light-section" id="cities">
 
-      <p class="section-number">04 / ART ACROSS CITIES</p>
+      <div class="section-inner">
 
-      <h2>Where are public artworks recorded?</h2>
-
-      <p class="section-text">
-        Explore recorded public artworks in Brisbane,
-        Melbourne and Canberra across historical periods.
-      </p>
-
-      <div class="chart-container">
-
-        <h3>Artwork Locations by Recorded Period</h3>
-
-        <p class="chart-explain">
-          Use the dropdown to select a period.
-          Each dot represents one artwork location.
-          Colours distinguish the recorded periods.
+        <p class="section-number">
+          04 / ART ACROSS CITIES
         </p>
 
-        <div class="chart-view" id="city-map"></div>
+        <h2>Where are public artworks recorded?</h2>
 
-        <p class="insight">
-          <strong>Key insight:</strong>
-          Most exactly dated records belong to 2000–2019.
-          Some artwork locations overlap at national scale.
+        <p class="section-text">
+          Explore individual artwork locations
+          across Brisbane, Melbourne and Canberra.
         </p>
 
-        <p class="source">
-          Sources: Brisbane City Council, City of Melbourne
-          and ACT Government. Exact recorded years only.
-          Date meanings differ between datasets.
-        </p>
+        <div class="chart-container">
+
+          <h3>Artwork Locations by Recorded Period</h3>
+
+          <p class="chart-explain">
+            Select a period using the dropdown.
+            Each dot represents an artwork record.
+          </p>
+
+          <div id="city-map" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Artwork locations form different clusters across cities.
+            Separate panels reveal local spatial patterns.
+          </p>
+
+          <p class="source">
+            Sources: Brisbane City Council, City of Melbourne
+            and ACT Government. Exact recorded years only.
+            Date definitions vary between datasets.
+          </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- IDIOM 5 -->
+
+    <!-- ======================================
+         IDIOMS 5 AND 11 — CITY COMPARISON
+         ====================================== -->
+
     <section class="section" id="city-comparison">
 
-      <p class="section-number">05 / CITY COMPARISON</p>
+      <div class="section-inner">
 
-      <h2>Which city dataset records more public art?</h2>
+        <p class="section-number">
+          05 / CITY COMPARISON
+        </p>
 
-      <p class="section-text">
-        Compare artwork counts across three cities.
-        Larger circle areas represent more records.
-      </p>
+        <h2>How does recorded public art vary by city?</h2>
 
-      <div class="chart-container">
+        <p class="section-text">
+          Compare overall artwork counts,
+          then explore their spatial concentrations.
+        </p>
 
-        <h3>Recorded Public Artworks by City</h3>
 
-        <div class="chart-view" id="symbol-map"></div>
+        <!-- IDIOM 5 — PROPORTIONAL SYMBOL MAP -->
+
+        <div class="chart-container">
+
+          <h3>Recorded Public Artworks by City</h3>
+
+          <p class="chart-explain">
+            Larger circle areas represent higher counts.
+            Labels identify the city totals.
+          </p>
+
+          <div id="symbol-map" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Melbourne records 261 artworks,
+            followed by Brisbane with 198
+            and Canberra with 132.
+          </p>
+
+          <p class="source">
+            Sources: Brisbane City Council, City of Melbourne
+            and ACT Government. Based on 591 records.
+            These are not complete city inventories.
+          </p>
+
+        </div>
+
+
+        <!-- IDIOM 11 — HEXAGONAL BIN MAP -->
+
+        <div class="chart-container">
+
+        <h3>Where Are Artwork Records Concentrated?</h3>
+
+        <p class="chart-explain">
+            Darker blue indicates more matched artist records.
+            Grey countries have no matched data.
+        </p>
+
+        <div id="hex-density-chart" class="chart-view"></div>
 
         <p class="insight">
-          <strong>Key insight:</strong>
-          Melbourne has 261 recorded artworks,
-          followed by Brisbane with 198
-          and Canberra with 132.
+            <strong>Key insight:</strong>
+            Recorded public artworks cluster in selected areas
+            of Brisbane, Melbourne and Canberra.
+            Darker hexagons reveal local concentrations
+            that are less obvious in the individual dot maps.
         </p>
 
         <p class="source">
-          Sources: Brisbane City Council, City of Melbourne
-          and ACT Government. Based on 591 records.
-          These datasets are not complete city inventories.
+            Sources: Brisbane City Council, City of Melbourne
+            and ACT Government. Hexagonal bins were calculated
+            from artwork coordinates. Geographic bin sizes
+            differ between cities, so comparisons are most
+            meaningful within each city.
         </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- IDIOM 6 -->
+
+    <!-- ======================================
+         IDIOM 6 — GLOBAL CHOROPLETH
+         ====================================== -->
+
     <section class="section light-section" id="global">
 
-      <p class="section-number">06 / GLOBAL REPRESENTATION</p>
+      <div class="section-inner">
 
-      <h2>Which countries appear in QAGOMA artist records?</h2>
-
-      <p class="section-text">
-        QAGOMA's artist records represent
-        countries from around the world.
-        Darker map colours indicate higher counts.
-      </p>
-
-      <div class="chart-container">
-
-        <h3>Artist Records by Principal Country</h3>
-
-        <div class="chart-view" id="choropleth-map"></div>
-
-        <p class="insight">
-          <strong>Key insight:</strong>
-          Australia has the largest matched count,
-          with 2,789 artist records.
-          The United Kingdom follows with 568,
-          and Japan with 327.
+        <p class="section-number">
+          06 / GLOBAL REPRESENTATION
         </p>
 
-        <p class="source">
-          Source: QAGOMA Artists and Organisations dataset.
-          Countries were matched using recorded principal country.
-          Grey countries have no matched prepared records.
+        <h2>Which countries appear in artist records?</h2>
+
+        <p class="section-text">
+          QAGOMA records artists associated
+          with countries around the world.
         </p>
+
+        <div class="chart-container">
+
+          <h3>Artist Records by Principal Country</h3>
+
+          <p class="chart-explain">
+            Darker blue indicates more matched records.
+            Grey countries have no matched records.
+          </p>
+
+          <div id="choropleth-map" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Australia has 2,789 matched artist records.
+            The United Kingdom follows with 568,
+            and Japan with 327.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Artists and Organisations dataset.
+            Principal country was used for matching.
+            Counts do not measure national artistic production.
+          </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- IDIOM 7 -->
+
+    <!-- ======================================
+         IDIOM 7 — TREEMAP
+         ====================================== -->
+
     <section class="section" id="diversity">
 
-      <p class="section-number">07 / COLLECTION COMPOSITION</p>
+      <div class="section-inner">
 
-      <h2>How do collection departments differ?</h2>
-
-      <p class="section-text">
-        QAGOMA's departments contain different
-        combinations of artwork categories.
-      </p>
-
-      <div class="chart-container">
-
-        <h3>Artwork Categories Within Departments</h3>
-
-        <p class="chart-explain">
-          Each rectangle represents an artwork category.
-          Rectangle area shows the number of artworks.
-          Colour identifies the collection department.
+        <p class="section-number">
+          07 / COLLECTION COMPOSITION
         </p>
 
-        <div class="chart-view" id="treemap-chart"></div>
+        <h2>How do collection departments differ?</h2>
 
-        <p class="source">
-          Source: QAGOMA collection dataset.
-          Based on 20,674 categorised artwork records.
+        <p class="section-text">
+          Departments contain different combinations
+          of recorded artwork categories.
         </p>
+
+        <div class="chart-container">
+
+          <h3>Artwork Categories Within Departments</h3>
+
+          <p class="chart-explain">
+            Rectangle area represents artwork counts.
+            Colour identifies the collection department.
+          </p>
+
+          <div id="treemap-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Painting and Drawing are prominent in Australian Art.
+            Print and Photograph occupy prominent areas
+            in Contemporary Australian Art.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Collection dataset.
+            Based on 20,674 categorised records.
+          </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- IDIOM 8 -->
+
+    <!-- ======================================
+         IDIOM 8 — BOXPLOT
+         ====================================== -->
+
     <section class="section light-section" id="acquisition">
 
-      <p class="section-number">08 / ACQUISITION HISTORY</p>
+      <div class="section-inner">
 
-      <h2>How long after creation was art acquired?</h2>
-
-      <p class="section-text">
-        Some artworks enter collections shortly after creation.
-        Others are acquired many decades later.
-      </p>
-
-      <div class="chart-container">
-
-        <h3>Creation-to-Acquisition Lag by Department</h3>
-
-        <p class="chart-explain">
-          The line inside each box shows the median.
-          The box represents the middle half of values.
+        <p class="section-number">
+          08 / ACQUISITION HISTORY
         </p>
 
-        <div class="chart-view" id="boxplot-chart"></div>
+        <h2>How long after creation was art acquired?</h2>
 
-        <p class="insight">
-          <strong>Key insight:</strong>
-          Contemporary Asian Art has a median lag
-          of one year, compared with 53 years
-          for International Art.
-          This does not measure gallery efficiency.
+        <p class="section-text">
+          Some artworks enter collections shortly after creation.
+          Others arrive many decades later.
         </p>
 
-        <p class="source">
-          Source: QAGOMA collection dataset.
-          Based on 12,173 records with suitable dates.
-          Missing and approximate dates were excluded.
-          Individual outlier points are hidden.
-        </p>
+        <div class="chart-container">
+
+          <h3>Creation-to-Acquisition Lag by Department</h3>
+
+          <p class="chart-explain">
+            The central line represents the median.
+            Boxes contain the middle half of values.
+          </p>
+
+          <div id="boxplot-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Contemporary Asian Art has a one-year median lag.
+            International Art has a median of 53 years.
+            This does not measure gallery efficiency.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Collection dataset.
+            Based on 12,173 suitably dated records.
+            Approximate dates were excluded.
+            Individual outlier points are hidden.
+          </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- IDIOM 9 -->
+
+    <!-- ======================================
+         IDIOM 9 — LOLLIPOP PLOT
+         ====================================== -->
+
     <section class="section" id="materials">
 
-      <p class="section-number">09 / OUTDOOR ART MATERIALS</p>
+      <div class="section-inner">
 
-      <h2>What materials shape Brisbane's public art?</h2>
-
-      <p class="section-text">
-        Outdoor artworks use traditional
-        and modern materials.
-        Explore Brisbane's recorded material descriptions.
-      </p>
-
-      <div class="chart-container">
-
-        <h3>Most Frequent Material Descriptions</h3>
-
-        <div class="chart-view" id="lollipop-chart"></div>
-
-        <p class="insight">
-          <strong>Key insight:</strong>
-          Bronze is recorded as a stand-alone material
-          in 46 artworks.
-          Compound descriptions are counted separately.
+        <p class="section-number">
+          09 / OUTDOOR ART MATERIALS
         </p>
 
-        <p class="source">
-          Source: Brisbane City Council public art dataset.
-          Based on 198 records.
-          Top twelve material descriptions.
+        <h2>What materials shape Brisbane's public art?</h2>
+
+        <p class="section-text">
+          Material descriptions reveal different
+          construction choices across outdoor artworks.
         </p>
+
+        <div class="chart-container">
+
+          <h3>Most Frequent Material Descriptions</h3>
+
+          <p class="chart-explain">
+            Each dot marks the recorded artwork count.
+            Materials are ordered from highest to lowest.
+          </p>
+
+          <div id="lollipop-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Bronze appears as a standalone material
+            in 46 artwork records.
+            Compound descriptions are counted separately.
+          </p>
+
+          <p class="source">
+            Source: Brisbane City Council Public Art Collection.
+            Based on 198 records.
+          </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- IDIOM 10 -->
-    <section class="section light-section" id="acquisition-methods">
 
-      <p class="section-number">10 / BUILDING THE COLLECTION</p>
+    <!-- ======================================
+         IDIOM 10 — NORMALISED STACKED BAR
+         ====================================== -->
 
-      <h2>How does QAGOMA acquire its artworks?</h2>
+    <section class="section light-section"
+      id="acquisition-methods">
 
-      <p class="section-text">
-        Gallery records describe purchases,
-        donations and bequests.
-        Compare these classifications across departments.
-      </p>
+      <div class="section-inner">
 
-      <div class="chart-container">
-
-        <h3>Acquisition Routes Across Departments</h3>
-
-        <p class="chart-explain">
-          Each bar represents 100% of a department.
-          Colours show the share of each acquisition route.
+        <p class="section-number">
+          10 / BUILDING THE COLLECTION
         </p>
 
-        <div class="chart-view" id="acquisition-chart"></div>
+        <h2>How does QAGOMA acquire its artworks?</h2>
 
-        <p class="insight">
-          <strong>Key insight:</strong>
-          Approximately 73.4% of Contemporary Asian Art
-          records are classified as purchases.
-          The share is 31.5% in Asian Art.
+        <p class="section-text">
+          Gallery credit lines record different
+          acquisition arrangements across departments.
         </p>
 
-        <p class="source">
-          Source: QAGOMA collection dataset.
-          Based on 20,682 artwork records.
-          Acquisition routes were inferred from credit-line wording.
-          They are not official classifications.
-        </p>
+        <div class="chart-container">
+
+          <h3>Acquisition Routes Across Departments</h3>
+
+          <p class="chart-explain">
+            Each bar totals 100% of a department.
+            Colours distinguish the acquisition routes.
+          </p>
+
+          <div id="acquisition-chart" class="chart-view"></div>
+
+          <p class="insight">
+            <strong>Key insight:</strong>
+            Approximately 73.4% of Contemporary Asian Art
+            records are classified as purchases.
+            Asian Art has a 31.5% purchase share.
+          </p>
+
+          <p class="source">
+            Source: QAGOMA Collection dataset.
+            Based on 20,682 records.
+            Routes were inferred from credit lines,
+            not official classifications.
+          </p>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- LIMITATIONS -->
-    <section class="section" id="methodology">
 
-      <p class="section-number">11 / METHODOLOGY</p>
+    <!-- ======================================
+         CLOSING PERSPECTIVE + METHODOLOGY
+         ====================================== -->
 
-      <h2>Understanding the data</h2>
+    <section class="section final-section" id="conclusion">
 
-      <p class="section-text">
-        These visualisations describe recorded collections.
-        They do not represent all Australian artworks.
-      </p>
+      <div class="section-inner final-grid">
 
-      <p class="section-text">
-        Dates, classifications and geographic coverage vary.
-        Some records contain missing or ambiguous information.
-        Comparisons should be interpreted within these limitations.
-      </p>
+        <!-- CLOSING PERSPECTIVE -->
 
-      <p class="section-text">
-        Data sources include QAGOMA, Brisbane City Council,
-        City of Melbourne and ACT Government.
-      </p>
+        <div class="final-column">
+
+          <p class="section-number">
+            11 / CONCLUSION
+          </p>
+
+          <h2>Beyond the collection.</h2>
+
+          <p class="section-text">
+            Recorded artworks tell different stories
+            through time, geography and collecting practices.
+          </p>
+
+          <p class="section-text">
+            QAGOMA's records reveal differences in categories
+            and acquisition histories.
+            Local datasets show where public artworks
+            have been documented.
+          </p>
+
+          <p class="section-text">
+            Together, these findings highlight how cultural
+            heritage is collected, represented and recorded.
+          </p>
+
+        </div>
+
+
+        <!-- METHODOLOGY -->
+
+        <div class="final-column" id="methodology">
+
+          <p class="section-number">
+            12 / METHODOLOGY
+          </p>
+
+          <h2>Understanding the data.</h2>
+            <p class="section-text">
+                This exhibition explores recorded artwork categories,
+                creation periods, locations and acquisition practices
+                to identify patterns across collections.
+            </p>
+
+            <p class="section-text">
+                Different charts and maps use position, length,
+                area and colour to show comparisons,
+                distributions and relationships.
+                Filters and tooltips support further exploration.
+            </p>
+
+            <p class="section-text">
+                The datasets cover different collections and regions.
+                Missing dates, classification differences and inferred
+                acquisition routes may affect comparisons.
+                The results do not represent all artworks in Australia.
+            </p>
+        </div>
+
+      </div>
 
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
 
-    <p>ART WITHOUT BORDERS · FIT3179 DV2</p>
+  <!-- ======================================
+       FOOTER — AUTHOR AND REFERENCES
+       ====================================== -->
+
+  <footer class="footer" id="references">
+
+    <div class="footer-inner footer-grid">
+
+      <!-- LEFT: AUTHOR AND AI -->
+
+      <div class="footer-column">
+
+        <p class="footer-brand">
+          ART WITHOUT BORDERS
+        </p>
+
+        <p class="footer-small">
+          FIT3179 · Data Visualisation 2
+        </p>
+
+        <p class="footer-small">
+          Created by Hee Xin Ny 35391731 · October 2026
+        </p>
+
+        <p class="ai-note">
+          AI acknowledgement: ChatGPT (OpenAI) was used
+          to assist with grammar checking and refining descriptions.
+          Suggestions were reviewed during development.
+        </p>
+
+      </div>
+
+
+      <!-- RIGHT: DATA SOURCES -->
+
+      <div class="footer-column">
+
+        <p class="footer-heading">
+          Data Sources
+        </p>
+
+        <p class="footer-small">
+
+          <a
+            href="https://www.data.qld.gov.au/dataset/qagoma-collection"
+            target="_blank"
+            rel="noopener noreferrer">
+            QAGOMA Collection
+          </a>
+
+          ·
+
+          <a
+            href="https://www.data.qld.gov.au/dataset/qagoma-artists-and-organisations"
+            target="_blank"
+            rel="noopener noreferrer">
+            QAGOMA Artists and Organisations
+          </a>
+
+        </p>
+
+        <p class="footer-small">
+
+          <a
+            href="https://data.brisbane.qld.gov.au/explore/dataset/public-art/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Brisbane
+          </a>
+
+          ·
+
+          <a
+            href="https://data.melbourne.vic.gov.au/explore/dataset/public-artworks-fountains-and-monuments/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Melbourne
+          </a>
+
+          ·
+
+          <a
+            href="https://www.arts.act.gov.au/public-art"
+            target="_blank"
+            rel="noopener noreferrer">
+            ACT Government
+          </a>
+
+        </p>
+
+        <p class="footer-small">
+
+          <a
+            href="https://github.com/stephenmuss/suburb-boundaries-geojson"
+            target="_blank"
+            rel="noopener noreferrer">
+            Australian suburb boundaries
+          </a>
+
+          ·
+
+          <a
+            href="https://github.com/topojson/world-atlas"
+            target="_blank"
+            rel="noopener noreferrer">
+            World Atlas
+          </a>
+
+        </p>
+
+      </div>
+
+    </div>
 
   </footer>
 
-  <!-- CHART SCRIPTS -->
+
+  <!-- ======================================
+       CHART JAVASCRIPT FILES
+       ====================================== -->
+
   <script src="idiom1_bar_chart.js"></script>
   <script src="idiom2_histogram.js"></script>
   <script src="idiom3_heatmap.js"></script>
@@ -482,6 +976,8 @@
   <script src="idiom8_boxplot.js"></script>
   <script src="idiom9_lolipop_plot.js"></script>
   <script src="idiom10_normalised_stacked_bar_chart.js"></script>
+  <script src="idiom11_hex_density.js"></script>
+  <script src="idiom12_steamgraph.js"></script>
 
 </body>
 </html>
